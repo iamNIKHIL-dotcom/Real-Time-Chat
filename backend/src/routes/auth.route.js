@@ -8,7 +8,9 @@ router.post("/login", login)
 router.post("/logout", logout)
 
 router.put("/update-profile",protectRoute, updateProfile);
+//check auth--if refresh occurs check auth
 
+router.get("/check", protectRoute, checkAuth);
 
 
 
