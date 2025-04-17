@@ -1,9 +1,14 @@
-import React from 'react'
+import { Link } from "react-router-dom";
+import { useAuthStore } from "../store/useAuthStore";
 
-const NavBar = () => {
+
+const Navbar = () => {
+  const { logout, authUser } = useAuthStore();
+
   return (
-    <div>NavBar</div>
-  )
-}
-
-export default NavBar
+    <div>
+        Navbar
+    </div>
+  );
+};
+export default Navbar;
