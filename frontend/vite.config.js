@@ -5,9 +5,11 @@ import tailwindcss from '@tailwindcss/vite';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [ 
-    tailwindcss(),react()
+    tailwindcss(),react(),
+   
 
   ],
+  //daisy ui not working with v4-tailwind
   daisyui : {
     themes : ["light",
       "dark",
@@ -40,6 +42,6 @@ export default defineConfig({
       "winter",
       "dim",
       "nord",
-      "sunset",]
+      "sunset"],
   }
 })
