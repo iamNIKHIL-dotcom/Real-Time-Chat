@@ -49,6 +49,7 @@ function App() {
         <Route path="/profile" element={authUser ? <ProfilePage /> : <Navigate to="/login" />} />
       
        </Routes>
+       <Toaster/>
      
     </div>
   )
